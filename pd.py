@@ -27,3 +27,11 @@ df.info()
 # بررسی Missing Values
 # یکی از اولین بررسی‌های مهم:
 df.isnull().sum()
+
+
+# درصد Missing Values
+missing_percentage = (
+    df.isnull().sum() / len(df) * 100
+)
+
+print(missing_percentage)
