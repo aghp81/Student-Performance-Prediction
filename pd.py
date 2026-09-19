@@ -68,3 +68,13 @@ print(records_per_student.value_counts())
 
 # بررسی Target
 print(df["at_risk"].value_counts())
+
+
+# درصد Target
+
+print(
+    df["at_risk"]
+    .value_counts(normalize=True)
+    .mul(100)
+    .round(2)
+)
