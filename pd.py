@@ -83,3 +83,17 @@ print(
 # بررسی آماری Dataset
 print(df.describe())
 
+
+# 
+gpa_columns = [
+    "previous_gpa",
+    "cumulative_gpa",
+    "midterm_average",
+    "quiz_average",
+    "assignment_average",
+    "project_average",
+    "final_gpa"
+]
+
+print(df[gpa_columns].describe().round(2))
+
