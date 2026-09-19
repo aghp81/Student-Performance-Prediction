@@ -1,0 +1,28 @@
+﻿feature_name,data_type,description_fa,range_or_values,role
+student_id,int,شناسه دانشجو,Identifier,Feature ID
+age,int,سن دانشجو,18-30,Feature
+gender,category,جنسیت,F/M,Feature
+major,category,رشته تحصیلی,6 majors,Feature
+academic_level,category,مقطع تحصیلی,Bachelor,Feature
+semester,int,شماره ترم,1-4,Feature
+previous_gpa,float,معدل ترم قبلی,0-20,Feature
+cumulative_gpa,float,معدل تجمعی تا قبل از ترم جاری,0-20,Feature
+failed_courses,int,تعداد دروس مردودی قبلی,0-6,Feature
+completed_credits,int,واحدهای گذرانده,0-130,Feature
+withdrawn_courses,int,تعداد دروس حذف‌شده,0-4,Feature
+attendance_rate,float,درصد حضور تا زمان پیش‌بینی,45-100,Feature
+absence_count,int,تعداد غیبت,0-35,Feature
+late_count,int,تعداد تأخیر,0-15,Feature
+midterm_average,float,میانگین نمرات میان‌ترم,4-20,Feature
+quiz_average,float,میانگین آزمونک‌ها,4-20,Feature
+assignment_average,float,میانگین تکالیف,4-20,Feature
+project_average,float,میانگین پروژه,4-20,Feature
+completed_assignments,int,تعداد تکالیف انجام‌شده,4-10,Feature
+late_assignments,int,تعداد تکالیف با تأخیر,0-10,Feature
+lms_login_count,int,تعداد ورود به LMS,2-60,Feature
+lms_active_days,int,تعداد روزهای فعال در LMS,2-30,Feature
+learning_time_hours,float,زمان یادگیری در LMS,3-100 hours,Feature
+gpa_trend,float,روند تغییر معدل,-8 to 8,Feature
+performance_trend,float,روند تغییر عملکرد جاری,-1 to 1,Feature
+final_gpa,float,معدل نهایی ترم,5-20,Outcome / Leakage
+at_risk,int,1 اگر final_gpa کمتر از 12 باشد,0/1,Target
