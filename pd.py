@@ -12,3 +12,6 @@ print(df.head(10))
 
 # ابعاد Dataset
 print(df.shape)
+
+# نام ستون‌ها
+print(df.columns)
