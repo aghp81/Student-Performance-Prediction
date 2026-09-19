@@ -81,4 +81,5 @@ print(
 
 
 # بررسی آماری Dataset
-df.describe()
+print(df.describe())
+
