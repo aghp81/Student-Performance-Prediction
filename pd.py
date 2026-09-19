@@ -19,3 +19,7 @@ print(df.columns)
 # برای خوانایی بیشتر:
 for column in df.columns:
     print(column)
+
+# بررسی اطلاعات Dataset
+# یکی از مهم‌ترین دستورات Pandas:
+df.info()
