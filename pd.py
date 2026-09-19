@@ -15,3 +15,7 @@ print(df.shape)
 
 # نام ستون‌ها
 print(df.columns)
+
+# برای خوانایی بیشتر:
+for column in df.columns:
+    print(column)
