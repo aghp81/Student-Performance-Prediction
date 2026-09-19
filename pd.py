@@ -23,3 +23,7 @@ for column in df.columns:
 # بررسی اطلاعات Dataset
 # یکی از مهم‌ترین دستورات Pandas:
 df.info()
+
+# بررسی Missing Values
+# یکی از اولین بررسی‌های مهم:
+df.isnull().sum()
