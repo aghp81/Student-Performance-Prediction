@@ -53,3 +53,8 @@ duplicate_student_semester = df.duplicated(
 ).sum()
 
 print(duplicate_student_semester)
+
+
+
+# تعداد دانشجویان
+print(df["student_id"].nunique())
