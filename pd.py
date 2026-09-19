@@ -35,3 +35,8 @@ missing_percentage = (
 )
 
 print(missing_percentage)
+
+
+
+# بررسی Duplicate
+df.duplicated().sum()
