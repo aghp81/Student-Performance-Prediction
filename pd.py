@@ -58,3 +58,9 @@ print(duplicate_student_semester)
 
 # تعداد دانشجویان
 print(df["student_id"].nunique())
+
+
+# تعداد رکورد هر دانشجو
+records_per_student = df.groupby("student_id").size()
+
+print(records_per_student.value_counts())
