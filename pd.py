@@ -40,3 +40,16 @@ print(missing_percentage)
 
 # بررسی Duplicate
 df.duplicated().sum()
+
+
+
+# بررسی Unique بودن Student + Semester
+# چون تعریف کردیم:
+# هر ردیف = یک دانشجو در یک ترم
+# پس ترکیب زیر باید Unique باشد:
+# student_id + semester
+duplicate_student_semester = df.duplicated(
+    subset=["student_id", "semester"]
+).sum()
+
+print(duplicate_student_semester)
