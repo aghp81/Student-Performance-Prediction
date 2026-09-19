@@ -78,3 +78,7 @@ print(
     .mul(100)
     .round(2)
 )
+
+
+# بررسی آماری Dataset
+df.describe()
