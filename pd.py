@@ -64,3 +64,7 @@ print(df["student_id"].nunique())
 records_per_student = df.groupby("student_id").size()
 
 print(records_per_student.value_counts())
+
+
+# بررسی Target
+print(df["at_risk"].value_counts())
