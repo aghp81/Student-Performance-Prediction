@@ -107,3 +107,10 @@ for column in gpa_columns:
 
 # بررسی Attendance
 print(df["attendance_rate"].describe())
+
+invalid = (
+    (df["attendance_rate"] < 0) |
+    (df["attendance_rate"] > 100)
+).sum()
+
+print(invalid)
