@@ -119,3 +119,14 @@ print(invalid)
 # نمایش سطرهایی که داده غلط دارند
 invalid_rows = df[(df["attendance_rate"] < 0) | (df["attendance_rate"] > 100)]
 print(invalid_rows)
+
+# بررسی Age
+print(df["age"].describe())
+
+
+invalid_age = (
+    (df["age"] < 18) |
+    (df["age"] > 30)
+).sum()
+
+print(invalid_age)
