@@ -130,3 +130,12 @@ invalid_age = (
 ).sum()
 
 print(invalid_age)
+
+
+# بخش دوم: اعتبارسنجی سن مجاز
+invalid_age = (
+    (df["age"] < 18) |
+    (df["age"] > 30)
+).sum()
+
+print(invalid_age)
