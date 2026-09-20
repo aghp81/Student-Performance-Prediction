@@ -104,7 +104,7 @@ for column in gpa_columns:
     invalid = ((df[column] < 0) | (df[column] > 20)).sum()
     print(column, invalid)
 
-
+# سنجش سلامت و رفتار متغیر درصد حضور و غیاب
 # بررسی Attendance
 print(df["attendance_rate"].describe())
 
