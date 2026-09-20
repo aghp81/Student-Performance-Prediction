@@ -114,3 +114,8 @@ invalid = (
 ).sum()
 
 print(invalid)
+
+
+# نمایش سطرهایی که داده غلط دارند
+invalid_rows = df[(df["attendance_rate"] < 0) | (df["attendance_rate"] > 100)]
+print(invalid_rows)
