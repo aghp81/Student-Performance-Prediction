@@ -103,3 +103,7 @@ print(df[gpa_columns].describe().round(2))
 for column in gpa_columns:
     invalid = ((df[column] < 0) | (df[column] > 20)).sum()
     print(column, invalid)
+
+
+# بررسی Attendance
+print(df["attendance_rate"].describe())
