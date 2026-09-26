@@ -151,3 +151,36 @@ print(df["major"].value_counts(normalize=True) * 100)
 # بررسی مقادیر خالی (dropna=False)
 print(df["gender"].value_counts(dropna=False))
 
+
+# بررسی Logical Consiste    ncy
+invalid = (
+    df["late_assignments"] >
+    df["completed_assignments"]
+).sum()
+
+print(invalid)
+
+print(
+    df[~df["at_risk"].isin([0, 1])]
+)
+
+
+expected_target = (df["final_gpa"] < 12).astype(int)
+
+print(
+    (df["at_risk"] != expected_target).sum()
+)
+
+# تطابق نمرات با مشروطی
+invalid_risk = ((df["final_gpa"] < 12) & (df["at_risk"] == 0)).sum()
+
+# تطابق حضور و غیبت
+invalid_attendance = ((df["attendance_rate"] == 100) & (df["absence_count"] > 0)).sum()
+
+
+# بررسی Target با Final GPA
+expected_target = (df["final_gpa"] < 12).astype(int)
+
+print(
+    (df["at_risk"] != expected_target).sum()
+)
