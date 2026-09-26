@@ -147,3 +147,7 @@ print(df["major"].value_counts())
 
 # نمایش درصد هر دسته به جای تعداد مطلق
 print(df["major"].value_counts(normalize=True) * 100)
+
+# بررسی مقادیر خالی (dropna=False)
+print(df["gender"].value_counts(dropna=False))
+
