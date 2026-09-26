@@ -144,3 +144,6 @@ print(invalid_age)
 print(df["gender"].value_counts())
 print(df["major"].value_counts())
 print(df["major"].value_counts())
+
+# نمایش درصد هر دسته به جای تعداد مطلق
+print(df["major"].value_counts(normalize=True) * 100)
