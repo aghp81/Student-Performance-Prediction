@@ -139,3 +139,8 @@ invalid_age = (
 ).sum()
 
 print(invalid_age)
+
+# بررسی متغیرهای Categoric
+print(df["gender"].value_counts())
+print(df["major"].value_counts())
+print(df["major"].value_counts())
